@@ -1,0 +1,59 @@
+{"info": [
+    { "id": 1,
+      "imgSrc": "images/pru.png",
+      "company": "Prudential",
+      "tech": "html5, css3, jQuery",
+      "proj": "Prudential Life Insurance, Get A Quote",
+      "linkURL": "https://edgpruquote.prudential.com/eDG/pruquote/pruquotemainproc.jsp?flow=essential&campaignid=040152&campaignextension=001013&sessionid=&ctrn=&office=&leadsource=pru.com&leadtype=quote&userid=&mainproducttype=&a=",
+      "more": false
+    },
+    { "id": 2,
+      "imgSrc": "images/saks.png",
+      "company": "Saks",
+      "tech": "html, css3, jQuery",
+      "proj": "Saks Store Locator for Desktop and Mobile",
+      "linkURL": "http://www.saks.com",
+      "more": false
+    },
+    { "id": 3,
+      "imgSrc": "images/belk.png",
+      "company": "Belk Retail", 
+      "tech": "html, css3, jQuery",
+      "proj": "Creating new html templates and fixing css issues for older browsers",
+      "linkURL": "http://www.belk.com",
+      "more": false
+    },
+    { "id": 4,
+      "imgSrc": "images/adobe.png",
+      "company": "Adobe", 
+      "tech": "html5, css3, jQuery",
+      "proj": "Created new shopping cart html/css jQuery experience",
+      "linkURL": "http://www.adobe.com",
+      "more": false      
+    },
+    { "id": 5,
+      "imgSrc": "images/freeman.png",
+      "company": "Freeman", 
+      "tech": "html5, css3, jQuery",
+      "proj": "HTML templates for mobile site",
+      "linkURL": "https://www.freemanco.com/store/mobile/loginMobile.jsp",
+      "more": false
+    },
+    { "id": 6,
+      "imgSrc": "images/mygofer.png",
+      "proj": "MyGofer", 
+      "tech": "html5, css3, jQuery",
+      "proj": "Building complex html, css and jQuery applications",
+      "linkURL": "http://www.mygofer.com",
+      "more": true
+    },
+    { "id": 7,
+      "imgSrc": "images/bchydro.png",
+      "company": "BC Hydro", 
+      "tech": "html5, css3, jQuery",
+      "proj": "Building complex html, css and jQuery applications",
+      "linkURL": "http://www.bchydro.com",
+      "more": true
+    }
+  ]
+}

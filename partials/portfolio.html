@@ -1,0 +1,73 @@
+<div class="container" ng-controller='PortfolioController'>
+    
+<div class="row clearfix">
+        <div class="col-md-12 column">              
+            <h2 class="fontface">
+                Bhargav's Portfolio
+            </h2>            
+
+            <div class="row clearfix separator" ng-repeat="item in items track by item.id | limitTo:totalDisplayed" ng-class="{'noBorder': $first, 'more': item.more}">
+                <div class="col-md-6 column">
+                    <img ng-src="{{item.imgSrc}}" class="img-responsive" />
+                </div>
+                <div class="col-md-6 column">
+                    <h3 class="fontface" ng-bind="item.company"></h3>
+                    <h4 ng-bind="item.tech"></h4>
+                    <p ng-bind="item.proj"></p>
+
+                    <p class="website">
+                        <a class="btn active btn-info" href="{{item.linkURL}}" title="{{item.company}}">
+                            Website
+                        </a>
+                    </p>
+                </div>
+            </div>                                      
+
+            <div class="row clearfix separator bottom60">
+                <a href="javascript:;" id="viewMore" class="btn btn-danger pull-right">
+                    View More...
+                </a>
+            </div> 
+            <div id='fixed-bar' class="row clearfix">
+                <div id='bar-inner'>
+                    <a class='go-top' href='#page-wrapper' title='back to top'>Back to Top</a>
+                </div>
+            </div>                    
+        </div>
+    </div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->       
+
+<!-- Menu Toggle Script -->
+<script>
+    
+    $("#viewMore").click(function (e) {
+        $('.more').show();
+        var $target = $('html,body');
+        $target.stop().animate({scrollTop: $target.height()}, 1000);
+        $(this).parent().hide();
+        e.preventDefault();
+    });
+    $("#fixed-bar")
+            .css({
+                position: 'fixed',
+                bottom: '0px'
+            })
+            .hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('#fixed-bar').fadeIn(200);
+        } else {
+            $('#fixed-bar').fadeOut(200);
+        }
+    });
+    $('.go-top').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+</script>  
+</body>  
+</html>
